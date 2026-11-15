@@ -1,0 +1,23 @@
+{
+  "name": "animo-explainer-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reusable, code-driven documentary explainer video template powered by Remotion.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts Explainer out/demo.mp4 --codec=h264 --audio-codec=aac",
+    "render:preview": "remotion render src/index.ts Explainer out/preview.mp4 --scale=0.5 --codec=h264",
+    "qc": "python3 scripts/qc.py"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.0"
+  }
+}
